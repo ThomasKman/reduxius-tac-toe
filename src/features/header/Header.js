@@ -62,6 +62,7 @@ export function Header() {
       setCharacter(player_two_character);
       checkWin(player_one_score);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [turn]);
 
   return (

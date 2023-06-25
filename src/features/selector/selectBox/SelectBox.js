@@ -16,7 +16,6 @@ export function SelectBox({ emoji }) {
   const p2Character = useSelector(
     (state) => state.character.player_two_character,
   );
-  let counter = 0;
 
   useEffect(() => {
     if (p1Character === emoji) {
@@ -26,6 +25,7 @@ export function SelectBox({ emoji }) {
     } else {
       setClassName('box');
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [player_turn]);
 
   const select = () => {
