@@ -9,6 +9,7 @@ export const characterSlice = createSlice({
   reducers: {
     player_one_change: (state, action) => {
       state.player_one_character = action.payload;
+      console.log(action);
     },
     player_two_change: (state, action) => {
       state.player_two_character = action.payload;
@@ -17,6 +18,6 @@ export const characterSlice = createSlice({
 });
 
 // Action creators are generated for each case reducer function
-export const { swap } = characterSlice.actions;
+export const { player_one_change, player_two_change } = characterSlice.actions;
 
 export default characterSlice.reducer;
