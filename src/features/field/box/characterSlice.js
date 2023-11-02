@@ -3,8 +3,8 @@ import { createSlice } from '@reduxjs/toolkit';
 export const characterSlice = createSlice({
   name: 'character',
   initialState: {
-    player_one_character: '💩',
-    player_two_character: '🙀',
+    player_one_character: '❌',
+    player_two_character: '⭕️',
   },
   reducers: {
     player_one_change: (state, action) => {
